@@ -1,4 +1,4 @@
-# [hamdivazim.github.io](https://hamdivazim.github.io/index.html) - My Blog
+# [hamdivazim.github.io](https://hamdivazim.github.io/) - My Blog
 
 **Introducing ... my own blog!**
 <br>
