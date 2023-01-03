@@ -2,6 +2,15 @@
   box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'poppinsmedium';
+    src: url('https://hamdivazim.github.io/assets/poppins-medium-webfont.woff2') format('woff2'),
+         url('https://hamdivazim.github.io/assets/poppins-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 pre code {
   background-color: #eee;
   border: 1px solid #999;
