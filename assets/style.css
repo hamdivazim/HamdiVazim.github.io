@@ -52,7 +52,75 @@ body {
   padding-left: 20px;
 }
 
-/* Fake image */
+/* navbar code */
+.navbar {
+  overflow: hidden;
+  background-color: #ebebeb;
+  text-align: center;
+  padding: 15px;
+}
+
+.navbar a {
+  padding: 15px;
+  text-align: center;
+  opacity: 0.6;
+  transition: 0.3s;
+  text-decoration: none;
+  color: #174f87;
+}
+
+.navbar a:hover {
+  background-color: #c9c9c9;
+  opacity: 1;
+}
+
+.navbar .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar a:not(:first-child) {display: none;}
+  .navbar a.icon {
+    float: left;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navbar.responsive {position: relative;}
+  .navbar.responsive .icon {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  .navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+
+
+.thinleftcolumn {   
+  float: left;
+  width: 25%;
+}
+
+/* Right column */
+.widerightcolumn {
+  float: left;
+  width: 75%;
+  padding-left: 20px;
+}
+
+.chip {
+  padding: 3px 20px 3px 20px;
+  background-color: #cfcfcf;
+  margin: 5px;
+}
+
+/* Placeholder */
 .placeholder {
   background-color: #aaa;
   width: 100%;
