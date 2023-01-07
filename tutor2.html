@@ -64,6 +64,12 @@ class FirebaseManager: ObservableObject {
           
         // Sign in using Firebase Auth
     }
+    
+    func registerUser(_ email: String, _ password: String) {
+    
+        // Register using Firebase Auth
+    
+    }
 
     func addDataToFirestore(collection: String, document: String, data: [String:Any]) {
 
@@ -85,6 +91,8 @@ struct ContentView: View {
     init() {
         FirebaseApp.configure()
     }
+    
+    @StateObject var firebaseManager = FirebaseManager()
           
     var body: some View {
         Text("Hello, world!")
@@ -93,7 +101,7 @@ struct ContentView: View {
         </code>
     </pre>
       <p class="txt">
-        In ContentView, import FirebaseApp and put the init function in the <em>struct</em>. This initialises Firebase in your app. However, you may have noticed an error while writing this code:
+        In ContentView, import FirebaseApp and put the init function in the <em>struct</em>. This initialises Firebase in your app. We'll also create an instance of our <em>FirebaseManager</em> too. However, you may have noticed an error while writing this code:
       </p>
 
       <img src="assets/ErrorA.png" width="70%">
