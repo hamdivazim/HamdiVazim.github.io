@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4GVY9S1BHR"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-4GVY9S1BHR');
+</script>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="assets/style.css">
+  <link rel="shortcut icon" type="image/x-icon" href="assets/favicon.ico">
+  <title>The Basics of Git Part 1 - A Tutorial by codingboy_CW</title>
+</head>
+  
+<body>
+  <script src="script.js"></script>
+
+<div class="header">
+  <h3 class="title">The Basics of Git - Part 1</h3>
+</div>
+<div class="navbar" id="topnav">
+    <a href="javascript:void(0);" class="icon" onclick="showMenu()">
+      <i class="fa fa-bars"></i>
+    </a>
+
+    <a href="./">Home</a>
+    <a href="https://github.com/hamdivazim">GitHub</a>
+    <a href="./allposts">Blog</a>
+    <a href="https://codingboy-cw.itch.io/">Itch</a>
+    <a href="./aboutme">About Me</a>
+    <a href="./alltutorials">Tutorials</a>
+ </div>
+  
+<div class="row">
+  <div class="card">
+    <h6>Published 16/01/23</h6>
+    <center>
+      <p class="txt">
+        Hey there awesome devs! In this tutorial, we'll be looking at how you setup git with your computer. Git is an important skill you need to know to be able to handle code properly, get a programming job etc. First, let's look at setting up git on your computer :)
+      </p>
+
+      <p class="txt">
+        We'll first need to install the <em><a href="https://git-scm.com/downloads" class="button">Git Bash Terminal</a></em>. Once you open the link, you should find a button to download Git Bash for your operating system:
+      </p>
+
+      <img src="assets/tut6a.png" width="20%">
+
+      <p class="txt">
+        Click the button to download and follow the instructions to install. Once you've finished, you should succesfully have Git Bash installed! Next, we'll be setting up git with your account. You'll need a <a href="" class="button">GitHub Account</a> for this :)
+      </p>
+
+      <pre>
+        <code>
+$ git config --global user.name "YOUR-USERNAME-HERE"
+$ git config --global user.email "YOUR-EMAIL-HERE"
+        </code>
+      </pre>
+
+      <p class="txt">
+        You can use the <em>git config</em> command to configure git with your account. The <em>--global</em> tag means that this will apply to every local (stored on your computer) repository that you make. If you don't want that, you can simply remove it. Once you're ready, we'll write some code :)
+      </p>
+
+      <p class="txt">
+        Create a new folder called <em>My-First-Git-Repo/</em> and navigate to it in Git Bash. We're going to initialise an empty <em>repository</em> here:
+      </p>
+
+      <pre>
+        <code>
+$ git init
+        </code>
+      </pre>
+
+      <p class="txt">
+        This creates the hidden folder <em>.git</em>. This is our repository. Git stores your code in these repositories each time you <em>commit</em> to them. The way git works is that you make modifications to your code (such as adding code, removing code, or adding/deleting files) and stage the changes. Once your changes are tested are are staged, they are ready to commit. Git creates a snapshot of your code and saves it in the repository, ready to revert back to if you happen to mess up.
+      </p>
+
+      <pre>
+        <code>
+$ git add .
+# The add command stages the changes and the dot signals that it should stage <em>every</em> change.
+
+$ git commit -m "A short description of the changes you've made."
+# The commit command commits the staged changes and saves them to the repository with a short message.
+        </code>
+      </pre>
+
+      <p class="txt">
+        You can write a short <em>hello world</em> program and save it to the folder. Then, practise the <em>git add</em> and <em>git commit</em> commands. Once you've got some commit history in your repository, get ready to push it up to GitHub :)
+      </p>
+
+      <p class="txt">
+        First we'll need to create a <em>remote repository</em>. This is basically a repository stored on GitHub.com. Go to <a href="https://github.com" class="button">GitHub</a> and click to create a new repository in the top menu.
+      </p>
+
+      <img src="assets/tut6b.png" width="40%">
+
+      <p class="txt">
+        You should now see a screen like this. Fill in the details similarly to the above, then hit <em>Create Repository</em> to make your first remote repo :)
+      </p>
+
+      <img src="assets/tut6c.png" width="20%">
+
+      <p class="txt">
+        If you see a <em>code</em> menu in the screen, click it and copy the GitHub link that comes up. If you see the screen titled <em>Quick setup - if you've done this kind of thing before</em>, click the copy button next to the link. Once you've got your remote repository link, switch back to Git Bash, ready to use it to connect your local repository to your remote repository :)
+      </p>
+
+      <pre>
+        <code>
+$ git remote add origin [THE-URL-YOU-JUST-COPIED]
+# Sets the remote repository
+
+$ git remote -v
+# Verifies the new URL
+
+$ git push origin main
+# Pushes the code to the 'main' branch of the remote repository you specified
+        </code>
+      </pre>
+
+      <p class="txt">
+        First, use the <em>git remote</em> command to specify and verify the remote repository you want to push to. Then, use the <em>git push</em> command to push your changes and commits to your remote repository. Once you get the hang of Git and GitHub, it becomes a really useful tool you'll use in your day-to-day life as a programmer.
+      </p>
+
+      <p class="txt">
+        Git is awesome and has great tools, but we have only covered the basics of how git works, how to commit and push your changes up to GitHub. If you want, you could ask me to make a part 2 on this topic and I'll cover <em>git checkout</em>, pull requests, markdown etc. I hope you learnt something new, and until next time, happy coding :)
+      </p>
+    </center>
+  </div>
+</div>
+
+<div class="footer">
+  <a href="./" style="text-decoration:none;color:black;"><h2>© codingboy_CW</h2></a>
+</div>
+
+</body>
+</html>

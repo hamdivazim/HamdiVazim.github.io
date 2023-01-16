@@ -20,6 +20,14 @@ pre code {
   font-size: 18px;
 }
 
+pre code.oneline {
+  background-color: #eee;
+  border: 1px solid #999;
+  padding: 20px;
+  text-align: left;
+  font-size: 14px;
+}
+
 /* Add a gray background color with some padding */
 body {
   font-family: "poppinsmedium";
