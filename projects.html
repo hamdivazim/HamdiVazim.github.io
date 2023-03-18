@@ -15,14 +15,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="assets/style.css">
   <link rel="shortcut icon" type="image/x-icon" href="assets/favicon.ico">
-  <title>The '.popover' modifier - A Tutorial by codingboy_CW</title>
+  <title>codingboy_CW's Projects</title>
 </head>
   
 <body>
   <script src="script.js"></script>
 
 <div class="header">
-  <h3 class="title">'.popover' modifier for SwiftUI</h3>
+  <h3 class="title">Projects</h3>
 </div>
 <div class="navbar" id="topnav">
     <a href="javascript:void(0);" class="icon" onclick="showMenu()">
@@ -40,35 +40,12 @@
   
 <div class="row">
   <div class="card">
-    <h6>Published 30/12/22</h6>
     <center>
-      <p class="txt">
-        The <em>popover</em> modifier allows you to display a secondary view over the first. These appear as floating modals on iPadOS but fan out from the bottom on iOS.
-      </p>
-      <p class="txt">
-        All you need to display your own popover is a state to determine whether it is presented. Unlike alerts or action sheets, popovers can display <em>anything</em> you need it to! Just 'pop' in your state variable and what you want to display, and SwiftUI does the rest:
-      </p>
-      <pre>
-        <code>
-struct ContentView: View {
-    @State var showPopover = false
-          
-    var body: some View {
-        Button("Show Menu") {
-            showPopover = true
-        }
-          .popover(isPresented: $showPopover) {
-              Text("Your content here")
-          }
-    }
-}
-        </code>
-      </pre>
-
-      <video loop muted autoplay>
-        <source src="assets/tut1a.mp4" type="video/mp4">
-      </video>
-      
+      <h2>Super Mario Bros. PLUS!</h2>
+      <h4>Notice: Only play here if you are unable to play on <a href="https://itch.io/embed-upload/7478130?color=4ad9ea" class="button">itch.io</a></h6>
+    
+      <iframe frameborder="0" src="https://itch.io/embed-upload/7478130?color=4ad9ea" allowfullscreen="" width="1280" height="760"><a href="https://codingboy-cw.itch.io/super-mario-bros-plus">Play Super Mario Bros. PLUS! on itch.io</a></iframe>
+    
     </center>
   </div>
 </div>
