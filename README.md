@@ -1,4 +1,4 @@
-# [hamdivazim.github.io](https://hamdivazim.github.io/) - My Blog
+# [hamdivazim.vercel.app](https://hamdivazim.vercel.app/) - My Blog
 
 **Introducing ... my own blog!**
 <br>
