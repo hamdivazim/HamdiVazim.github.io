@@ -1,4 +1,4 @@
-# [hamdivazim.vercel.app](https://hamdivazim.vercel.app/) - My Blog
+# [hamdivazim.hamdtel.co.uk](https://hamdivazim.hamdtel.co.uk/) - My Blog
 
 **Introducing ... my own blog!**
 <br>
